@@ -1,0 +1,93 @@
+/******************************************************************
+Site Name:	Swisssh
+Author:		Derry Birkett
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/* -----------------------------------------------------
+	Header
+
+
+-----------------------------------------------------*/
+#Masthead {
+	
+	#Utility {
+		h1 { font-size: 10pt; color: $faded;}
+	}
+
+	#Branding {
+		padding: 100px 0em;
+	}
+}
+/* -----------------------------------------------------
+	User input
+
+
+-----------------------------------------------------*/
+	#User {
+		padding: 3em 0em;
+		input#PlayerName {
+			width: 60%; 
+			font-size: 32pt;
+		}	
+	}
+
+/* -----------------------------------------------------
+	SHOTS
+
+
+-----------------------------------------------------*/
+.hoverlay {
+	display: block;
+}
+
+.stats {
+	text-align: right;
+	font-size: 10pt; font-weight: bold;
+	.views {}
+	.likes {}
+	i { margin-left: 2px; }
+}
+
+
+/* -----------------------------------------------------
+	Explanations
+
+
+-----------------------------------------------------*/
+#Explanations {
+	padding-top: 2em;
+	h3 { margin-bottom: 0em; margin-top: 0em;}
+	p { margin: 0em;}
+}
+
+/* -----------------------------------------------------
+	FAQ
+
+
+-----------------------------------------------------*/
+#FAQ {
+	padding-top: 3em;
+	h2 { font-weight: 300;  line-height: normal; margin-bottom: 1em;}
+	h3 { margin-bottom: 0em; line-height: normal;}
+	p { }
+}
+
+/* -----------------------------------------------------
+	Footer
+		01 Copyright
+		02 Credits
+
+-----------------------------------------------------*/
+#Footer {
+	padding-top: 5em;
+}

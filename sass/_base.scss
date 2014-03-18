@@ -1,0 +1,229 @@
+/******************************************************************
+Site Name:	Dunked
+Author:		Derry Birkett
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+$faded:    #aad8a7;
+$emerland: #7cc576;
+
+::-webkit-input-placeholder {  color: $faded !important; font-weight: 300; }
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+
+}
+
+body {
+	// !important Overwrite Bootstrap Padding on Body so we can have full width images
+	font-family: 'Open Sans', $sans-serif;
+	background: $emerland;
+	color: $clouds;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; margin: 0em; padding: 0em;}
+
+a {
+	color: white;
+	text-decoration: none;
+	&:hover { color: white; border-bottom: 1px dotted white;	text-decoration: none;}
+}
+
+i { margin-top: 2px !important; }
+
+/* -----------------------------------------------------
+	Header
+
+
+-----------------------------------------------------*/
+#Masthead {
+	
+	#Utility {
+		h1 { font-size: 10pt; color: $faded;}
+	}
+	
+	#AdPack {
+		padding: 1em 0em;
+	}
+		
+	#Branding {
+		text-align: center;
+		padding: 50px 0em;
+		width: 180px; height: 50px;
+		margin: 0px auto;
+		background: url('../img/logo.png') center center no-repeat;
+	}
+	
+	h2 {
+		text-align: center;
+		font-weight: 300;
+		font-size: 42pt;
+		line-height: normal;
+		letter-spacing: -3px;
+		padding: 0.5em 0em;
+		color: white;
+		
+	}
+}
+/* -----------------------------------------------------
+	User input
+
+
+-----------------------------------------------------*/
+	#User {
+		text-align: center;
+		padding: 3em 0em;
+		input#PlayerName {
+			border: none; border-radius: 0px; width: 90%; margin: 0 auto; box-shadow: none; 
+			line-height: normal; vertical-align: bottom; 
+			background: none; font-size: 11pt; color: white; border-bottom: 3px solid white; text-align: center; height: auto;
+			font-weight: 300; color: $faded;
+		}	
+	}
+
+/* -----------------------------------------------------
+	SHOTS
+
+
+-----------------------------------------------------*/
+#Shots {
+	padding: 1em 0em;
+	.scrShot { width: 100%; height: auto; z-index: 200;}
+}
+
+	// For the glyphicons, they need some margin up top
+	.shotContainer { 
+		position: relative; 
+		z-index: 100;
+		text-align: left;
+		
+		.tab {
+			/*
+				Score bubble
+			*/
+			background: $alizarin; 
+			border-radius: 25px; 
+			height: 40px; width: 40px;
+			line-height: 40px; text-align: center;
+			right: 10px; top: 10px;
+			position: absolute; z-index: 900; 
+			font-size: 10pt; font-weight: 700;
+		}
+		
+		.screenShot { width: 100%; height: auto; z-index: 200;}
+
+		.hoverlay {
+			display: none;
+			position: absolute;
+			padding: 3em 2em;
+			top:0;
+		    left:0;
+		    right:0;
+		    bottom:0;
+			background: $alizarin;
+			opacity: 0.9;
+			z-index: 500;
+			
+			.stats { 
+				margin-bottom: 10px;
+			} 
+			
+			.details {
+				h2.title { font-size: 18pt; font-weight: 300; line-height: normal;}
+				p.username { color: white; margin-top: 0.5em; opacity: 0.5}
+			}
+			
+			.score {
+				font-size: 18pt; font-weight: 300; line-height: normal; margin-top: 5px;
+			}
+
+		}
+		
+		.shotDetails {
+			padding: 0.5em 0em;
+			height: 110px;
+
+			h2.title {
+				font-size: 12pt;
+				margin: 0em; padding: 0em; line-height: normal;
+				max-width: 200px;
+			}
+			
+			p.username {
+				margin: 0em;
+				color: $faded !important;
+				font-size: 10pt;
+				a { color: $faded;
+					&:hover { color: $clouds;}
+				}
+			}
+			
+			.stats {
+				text-align: right; ;
+				font-size: 10pt; font-weight: bold;
+				.views {}
+				.likes {}
+				i { margin-left: 2px; }
+			}
+		}
+		
+	}
+
+
+/* -----------------------------------------------------
+	Explanations
+
+
+-----------------------------------------------------*/
+#Explanations {
+	padding-top: 2em;
+	h3 { margin-bottom: 0em; margin-top: 0em;}
+	p { margin: 0em;}
+}
+
+/* -----------------------------------------------------
+	FAQ
+
+
+-----------------------------------------------------*/
+#FAQ {
+	padding-top: 2em;
+	h2 { font-weight: 300;  line-height: normal; margin-bottom: 1em;}
+	h3 { margin-bottom: 0em; line-height: normal;}
+	p { }
+}
+
+/* -----------------------------------------------------
+	Footer
+		01 Copyright
+		02 Credits
+
+-----------------------------------------------------*/
+#Footer {
+	font-size: 10pt !important;	
+	padding-top: 5em;
+	#Copyright 	{ }
+	#Credits 	{ margin-bottom: 30px; }
+	#Minilogo { 
+		width: 61px; height: 16px; background: url('../img/minilogo.png') center center no-repeat;
+		margin-bottom: 0.2em;
+	 }
+	#Version { color: $faded; margin-top: 0em;}	
+	
+	#WeNeedPixels {
+		width: 190px; height: 102px;
+		background: url('../img/weneedpixels/logo.png') right center no-repeat;
+	}
+}
