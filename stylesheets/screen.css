@@ -908,10 +908,9 @@ i {
 /* line 69, ../sass/_base.scss */
 #Masthead h2 {
   text-align: center;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 42pt;
   line-height: normal;
-  letter-spacing: -3px;
   padding: 0.5em 0em;
   color: white;
 }
